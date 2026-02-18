@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hardik Lomate | Cybersecurity Engineer — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hardik Lomate — Cybersecurity undergraduate specializing in SOC operations, log analysis, threat detection, vulnerability assessment, and security automation. Based in Pune, India.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TERMINAL BACKGROUND -->
+  <div class="terminal-bg">
+    <pre id="bg-terminal"></pre>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles" class="particle-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="brand">HARDIK</div>
+    <nav id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section id="home" class="hero">
+      <div class="hero-text fade-up">
+        <span class="intro">HI THERE, I'M</span>
+        <h1><span id="typed-role">Hardik Lomate</span><span class="typing-cursor"></span></h1>
+        <p>
+          Cybersecurity undergraduate focused on SOC operations, log analysis,
+          threat detection, vulnerability assessment, and Python-based security automation.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+          <a class="btn btn-outline" href="resumebsic.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+        </div>
+
+        <div class="hero-badges">
+          <a href="https://github.com/hardik-lomate" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/GitHub-hardik--lomate-181717?style=for-the-badge&logo=github"
+              alt="GitHub Profile">
+          </a>
+          <a href="https://tryhackme.com/p/5638507" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/TryHackMe-Profile-212C42?style=for-the-badge&logo=tryhackme"
+              alt="TryHackMe Profile">
+          </a>
+          <a href="https://linkedin.com/in/hardiklomate/" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/LinkedIn-hardiklomate-0A66C2?style=for-the-badge&logo=linkedin"
+              alt="LinkedIn Profile">
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-video fade-up fade-up-delay-2">
+        <video autoplay loop muted playsinline>
+          <source src="sub.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- ══════════ ABOUT ══════════ -->
+    <section id="about" class="about">
+      <div class="about-image fade-up">
+        <img src="pf1.png" alt="Hardik Lomate — Cybersecurity Engineer" class="about-profile-photo">
+      </div>
+
+      <div class="about-text fade-up fade-up-delay-1">
+        <span class="section-tag">About Me</span>
+        <h2>Hello, I Am <span>Hardik Lomate</span></h2>
+        <p>
+          Cybersecurity undergraduate focused on Security Operations Center (SOC) practices
+          including log analysis, authentication monitoring, threat detection, and SIEM fundamentals.
+          Hands-on experience building virtual lab environments for vulnerability assessment
+          and network traffic monitoring. I break systems to understand how to defend them, no theory-only security.
+        </p>
+
+        <ul class="about-info">
+          <li><b>Focus:</b> SOC &amp; Cyber Security</li>
+          <li><b>Location:</b> Pune, Maharashtra, India</li>
+          <li><b>Education:</b> B.E. Cyber Security (2028)</li>
+          <li><b>Status:</b> <span style="color:var(--accent);">● Available</span></li>
+        </ul>
+
+        <div class="skills-container">
+          <h3>Core Skills</h3>
+          <div class="skill">
+            <div class="skill-header"><span>Log Analysis &amp; Event Correlation</span><span>90%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-header"><span>Vulnerability Assessment (Nmap)</span><span>88%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="88"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-header"><span>Network Traffic Analysis (Wireshark)</span><span>85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-header"><span>Python Security Automation</span><span>82%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="82"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill-header"><span>Kali Linux &amp; Windows Security</span><span>87%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="87"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SERVICES / SKILLS ══════════ -->
+    <section id="services" class="services">
+      <div class="fade-up" style="text-align:center; margin-bottom:32px;">
+        <span class="section-tag">What I Do</span>
+        <h2 class="section-title">MY <span>SERVICES</span></h2>
+        <p class="section-desc" style="margin-left:auto; margin-right:auto;">
+          SOC-focused cybersecurity services from log analysis and threat hunting to vulnerability assessment and
+          security automation.
+        </p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon"><i class="fa-solid fa-file-shield"></i></div>
+          <h3>Log Analysis &amp; SIEM</h3>
+          <p>Windows Event Log analysis (Event ID 4624/4625), authentication monitoring, time-based log correlation, and
+            SIEM fundamentals.</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon"><i class="fa-solid fa-crosshairs"></i></div>
+          <h3>Threat Detection</h3>
+          <p>Brute-force pattern detection, threat hunting fundamentals, incident response workflow, and alert
+            generation with mitigation strategies.</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-3">
+          <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h3>Vulnerability Assessment</h3>
+          <p>TCP SYN and service version scans using Nmap to identify open ports, exposed services (SSH, SMB, HTTP), and
+            recommend remediation.</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-4">
+          <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Network Traffic Analysis</h3>
+          <p>Capturing and analyzing DNS, HTTP, and TCP traffic with Wireshark. Investigating abnormal
+            authentication-related network behavior.</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-5">
+          <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Security Automation</h3>
+          <p>Python-based security automation scripts for log parsing, alert generation, brute-force detection, and SOC
+            workflow optimization.</p>
+        </div>
+        <div class="service-card fade-up fade-up-delay-5">
+          <div class="service-icon"><i class="fa-brands fa-linux"></i></div>
+          <h3>Linux &amp; Windows Security</h3>
+          <p>Kali Linux for penetration testing, Windows security event monitoring, Git-based workflow, and TCP/IP, DNS,
+            HTTP protocol analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PROJECTS ══════════ -->
+    <section id="projects" class="portfolio">
+      <div class="fade-up" style="text-align:center; margin-bottom:32px;">
+        <span class="section-tag">Hands-On Work</span>
+        <h2 class="section-title">MY <span>PROJECTS</span></h2>
+        <p class="section-desc" style="margin-left:auto; margin-right:auto;">
+          Real-world security projects built in virtual lab environments from log analysis to network vulnerability
+          assessments.
+        </p>
+      </div>
+
+      <div class="project-list">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-up">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-file-shield"></i></div>
+            <div>
+              <h3>Log Analysis &amp; Authentication Threat Detection</h3>
+              <span class="project-tech">Python · Windows Event Logs</span>
+            </div>
+          </div>
+          <ul class="project-details">
+            <li>Analyzed Windows Event ID 4624 &amp; 4625 to identify failed authentication attempts</li>
+            <li>Implemented time-based log correlation to detect brute-force patterns</li>
+            <li>Generated alert output and recommended mitigation strategies</li>
+          </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-up fade-up-delay-1">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+            <div>
+              <h3>Network Vulnerability Assessment</h3>
+              <span class="project-tech">Kali Linux · Nmap</span>
+            </div>
+          </div>
+          <ul class="project-details">
+            <li>Performed TCP SYN and service version scans to identify open ports</li>
+            <li>Analyzed exposed services such as SSH, SMB, and HTTP</li>
+            <li>Documented vulnerabilities and suggested remediation steps</li>
+          </ul>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-up fade-up-delay-2">
+          <div class="project-header">
+            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <h3>Network Traffic Analysis</h3>
+              <span class="project-tech">Wireshark</span>
+            </div>
+          </div>
+          <ul class="project-details">
+            <li>Captured and analyzed DNS, HTTP, and TCP traffic</li>
+            <li>Investigated abnormal authentication-related network behavior</li>
+            <li>Identified potential indicators of suspicious activity</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════ CERTIFICATIONS ══════════ -->
+    <section id="certifications" class="certifications">
+      <div class="fade-up" style="text-align:center; margin-bottom:32px;">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">MY <span>CERTIFICATIONS</span></h2>
+      </div>
+
+      <div class="cert-grid">
+        <a class="cert-card fade-up fade-up-delay-1" href="#" target="_blank" rel="noopener">
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h4>Certified AI Security &amp; Risk (CAISR)</h4>
+          <span>2025</span>
+        </a>
+        <a class="cert-card fade-up fade-up-delay-2" href="https://tryhackme.com/p/5638507" target="_blank"
+          rel="noopener">
+          <div class="cert-icon"><i class="fa-solid fa-flag"></i></div>
+          <h4>TryHackMe Advent of Cyber</h4>
+          <span>2023 &amp; 2024</span>
+        </a>
+        <a class="cert-card fade-up fade-up-delay-3" href="#" target="_blank" rel="noopener">
+          <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>IBM Cybersecurity Fundamentals</h4>
+          <span>IBM</span>
+        </a>
+        <a class="cert-card fade-up fade-up-delay-4" href="#" target="_blank" rel="noopener">
+          <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h4>Introduction to Cybersecurity</h4>
+          <span>Cisco</span>
+        </a>
+      </div>
+
+      <!-- Badges -->
+      <div class="badges-row fade-up" style="margin-top: 32px;">
+        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=5638507"
+          class="thm-badge"></iframe>
+      </div>
+    </section>
+
+    <!-- ══════════ STATS ══════════ -->
+    <section class="stats">
+      <div class="stat-item fade-up">
+        <h3><span class="counter" data-target="3">0</span>+</h3>
+        <p>Security Projects</p>
+      </div>
+      <div class="stat-item fade-up fade-up-delay-1">
+        <h3><span class="counter" data-target="5">0</span>+</h3>
+        <p>Certifications</p>
+      </div>
+      <div class="stat-item fade-up fade-up-delay-2">
+        <h3><span class="counter" data-target="10">0</span>+</h3>
+        <p>Security Labs</p>
+      </div>
+      <div class="stat-item fade-up fade-up-delay-3">
+        <h3>100<span style="font-size:0.6em;">%</span></h3>
+        <p>Hands-on Approach</p>
+      </div>
+    </section>
+
+    <!-- ══════════ EDUCATION ══════════ -->
+    <section id="education" class="education">
+      <div class="fade-up" style="text-align:center; margin-bottom:32px;">
+        <span class="section-tag">Background</span>
+        <h2 class="section-title">MY <span>EDUCATION</span></h2>
+      </div>
+
+      <div class="edu-timeline">
+        <div class="edu-card fade-up">
+          <div class="edu-year">Pursuing (2025 - 2028)</div>
+          <h3>Bachelor of Engineering in Cyber Security</h3>
+          <p class="edu-school">University of Mumbai</p>
+          <p class="edu-desc">Currently pursuing B.E. in Cybersecurity with focus on SOC operations, threat detection,
+            and security automation.</p>
+        </div>
+        <div class="edu-card fade-up fade-up-delay-1">
+          <div class="edu-year">Completed (2022-2025)</div>
+          <h3>Diploma in Information Technology</h3>
+          <p class="edu-school">Dr. Babasaheb Ambedkar Technological University</p>
+          <p class="edu-desc">CGPA: 7.80 / 10 - Strong foundation in IT fundamentals, networking, and programming.</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ══════════ CONTACT ══════════ -->
+    <section id="contact" class="contact">
+      <div class="fade-up" style="margin-bottom:48px;">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">CONTACT <span>ME</span></h2>
+        <p class="section-desc" style="margin-left:auto; margin-right:auto;">
+          Interested in working together or have a security challenge? Let's connect.
+        </p>
+      </div>
+
+      <div class="contact-wrapper fade-up fade-up-delay-1">
+        <div class="contact-info-block">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hardiklomate53@gmail.com">hardiklomate53@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+919112820941">+91-9112820941</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/hardiklomate/" target="_blank"
+                rel="noopener">linkedin.com/in/hardiklomate</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Pune, Maharashtra, India</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject">
+          <textarea name="message" placeholder="Your Message..." required></textarea>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          <div class="form-success" id="form-success">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Thanks! Your message has been received. I'll get back to you soon.</span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Hardik Lomate — Cybersecurity Portfolio. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/hardik-lomate" target="_blank" rel="noopener" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/hardiklomate/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:hardiklomate53@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+919112820941" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ══════════ SCRIPTS ══════════ -->
+  <script>
+    /* ── Terminal Background (char-by-char ~50 WPS) ──────── */
+    const terminal = document.getElementById("bg-terminal");
+    const termLines = [
+      "hardik@kali:~# nmap -sV -sC 192.168.1.0/24",
+      "Starting Nmap 7.94 ( https://nmap.org )",
+      "Discovered open port 22/tcp on 192.168.1.15",
+      "Discovered open port 80/tcp on 192.168.1.15",
+      "Discovered open port 445/tcp on 192.168.1.15",
+      "22/tcp  open  ssh     OpenSSH 8.9",
+      "80/tcp  open  http    Apache/2.4.52",
+      "445/tcp open  smb     Samba 4.15",
+      "Nmap done: 256 hosts scanned in 14.32 seconds",
+      "",
+      "hardik@kali:~# python3 log_analyzer.py --eventid 4625",
+      "[INFO] Loading Windows Security Event Logs...",
+      "[INFO] Filtering Event ID 4625 (Failed Logon)...",
+      "[WARN] 12 failed logons from 10.0.0.23 (admin)",
+      "[WARN] 35 failed logons from 10.0.0.23 (root)",
+      "[ALERT] 47 failed attempts from 10.0.0.23 in 5 minutes",
+      "[ALERT] Brute-force pattern detected — recommending IP block",
+      "[ACTION] Added 10.0.0.23 to firewall blocklist",
+      "",
+      "hardik@kali:~# wireshark -i eth0 -k -Y 'dns'",
+      "[*] Capturing DNS traffic on eth0...",
+      "[*] Query: A suspicious-domain.xyz",
+      "[*] Response: 185.143.xx.xx — flagged as malicious",
+      "[ALERT] Potential C2 communication detected",
+      "[*] Query: A update.legit-service.com",
+      "[*] Response: 93.184.xx.xx — clean",
+      "",
+      "hardik@kali:~# sudo iptables -A INPUT -s 10.0.0.23 -j DROP",
+      "[OK] Rule added successfully",
+      "",
+      "hardik@kali:~# nmap -sS -sV --top-ports 1000 target.local",
+      "PORT     STATE SERVICE  VERSION",
+      "22/tcp   open  ssh      OpenSSH 8.9p1",
+      "80/tcp   open  http     Apache/2.4.52",
+      "3306/tcp open  mysql    MySQL 8.0.32",
+      "8080/tcp open  http     Node.js Express",
+      "[*] Service vulnerabilities found: 2 critical",
+      "[*] CVE-2023-XXXX: Apache RCE (CVSS 9.8)",
+      "",
+      "hardik@kali:~# python3 brute_force_detector.py",
+      "[INFO] Analyzing Event ID 4624 (Successful Logon)...",
+      "[INFO] Correlating with 4625 events...",
+      "[OK] Normal auth pattern: user 'admin' from 10.0.0.1",
+      "[ALERT] Anomalous logon: user 'svc_account' from external IP",
+      "[ALERT] Privilege escalation attempt detected",
+      "",
+      "hardik@kali:~# tshark -r capture.pcap -Y 'http.request'",
+      "1 0.000000 10.0.0.5 → 192.168.1.20 HTTP GET /admin",
+      "2 0.034521 10.0.0.5 → 192.168.1.20 HTTP POST /login",
+      "3 0.089123 10.0.0.5 → 192.168.1.20 HTTP GET /uploads",
+      "4 0.112400 10.0.0.5 → 192.168.1.20 HTTP GET /etc/passwd",
+      "[*] Suspicious directory traversal attempt detected",
+      "[ALERT] SQLi payload found in POST /login",
+      "",
+      "hardik@kali:~# hashcat -m 0 -a 0 hashes.txt rockyou.txt",
+      "[*] Cracking MD5 hashes...",
+      "[OK] admin:password123 (cracked in 0.8s)",
+      "[OK] user2:dragon2024 (cracked in 2.1s)",
+      "[*] 2/5 hashes recovered",
+      "",
+      "hardik@kali:~# nikto -h http://192.168.1.20",
+      "[+] Target: http://192.168.1.20",
+      "[+] Server: Apache/2.4.52 (Ubuntu)",
+      "[!] /admin/config.php: Config file found",
+      "[!] /backup.sql: Database dump exposed",
+      "[+] 6 vulnerabilities identified",
+      ""
+    ];
+    const termFullText = termLines.join("\n");
+    let termCharIdx = 0;
+    let termContent = "";
+    function termTick() {
+      const charsPerTick = 8 + Math.floor(Math.random() * 5);
+      for (let i = 0; i < charsPerTick; i++) {
+        termContent += termFullText[termCharIdx % termFullText.length];
+        termCharIdx++;
+        if (termCharIdx % termFullText.length === 0) termContent += "\n";
+      }
+      const lines = termContent.split("\n");
+      if (lines.length > 80) termContent = lines.slice(-60).join("\n");
+      terminal.textContent = termContent;
+      requestAnimationFrame(termTick);
+    }
+    requestAnimationFrame(termTick);
+
+    /* ── Hamburger Menu ──────────────────────────────────── */
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+
+    navMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => navMenu.classList.remove("active"));
+    });
+
+    /* ── Back to Top ─────────────────────────────────────── */
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      backToTop.classList.toggle("visible", window.scrollY > 400);
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    /* ── Scroll Reveal (Intersection Observer) ───────────── */
+    const faders = document.querySelectorAll(".fade-up");
+    const appearOptions = {
+      threshold: 0.15,
+      rootMargin: "0px 0px -40px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+    faders.forEach(f => appearOnScroll.observe(f));
+
+    /* ── Skill Bar Animation ─────────────────────────────── */
+    const skillFills = document.querySelectorAll(".skill-fill");
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.width = entry.target.dataset.width + "%";
+          skillObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    skillFills.forEach(sf => skillObserver.observe(sf));
+
+    /* ── Counter Animation ───────────────────────────────── */
+    const counters = document.querySelectorAll(".counter");
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.dataset.target);
+          let current = 0;
+          const step = Math.max(1, Math.ceil(target / 40));
+          const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            el.textContent = current;
+          }, 50);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    /* ── Typing Effect ───────────────────────────────────── */
+    const roles = ["Hardik Lomate", "SOC Analyst", "Security Engineer", "Threat Hunter", "Python Automator"];
+    const typedEl = document.getElementById("typed-role");
+    let roleIdx = 0, charIdx = roles[0].length, isDeleting = false;
+
+    function typeEffect() {
+      // Initial pause on "Hardik Lomate" then start deleting
+      if (roleIdx === 0 && charIdx === roles[0].length && !isDeleting) {
+        isDeleting = true;
+        setTimeout(typeEffect, 2200);
+        return;
+      }
+
+      if (isDeleting) {
+        typedEl.textContent = typedEl.textContent.substring(0, typedEl.textContent.length - 1);
+        if (typedEl.textContent.length === 0) {
+          isDeleting = false;
+          roleIdx = (roleIdx + 1) % roles.length;
+          charIdx = 0;
+        }
+        setTimeout(typeEffect, 30);
+      } else {
+        const current = roles[roleIdx];
+        charIdx++;
+        typedEl.textContent = current.substring(0, charIdx);
+        if (charIdx === current.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 2000);
+          return;
+        }
+        setTimeout(typeEffect, 70);
+      }
+    }
+    setTimeout(typeEffect, 1500);
+
+    /* ── Navbar Scroll Effect + Active Link ──────────────── */
+    const navbar = document.getElementById("navbar");
+    const navLinks = document.querySelectorAll("#nav-menu a");
+    const sections = document.querySelectorAll("section[id]");
+
+    function updateActiveNav() {
+      const scrollY = window.scrollY + 120;
+      navbar.style.borderBottomColor = window.scrollY > 50
+        ? "rgba(0, 255, 153, 0.08)"
+        : "rgba(255, 255, 255, 0.06)";
+
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute("id");
+        const link = document.querySelector(`#nav-menu a[href="#${id}"]`);
+        if (link) {
+          if (scrollY >= top && scrollY < top + height) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        }
+      });
+    }
+    window.addEventListener("scroll", updateActiveNav);
+    updateActiveNav();
+
+    /* ── Contact Form Handler ───────────────────────────── */
+    const contactForm = document.getElementById("contact-form");
+    const formSuccess = document.getElementById("form-success");
+
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      formSuccess.classList.add("visible");
+      contactForm.reset();
+      setTimeout(() => formSuccess.classList.remove("visible"), 5000);
+    });
+
+    /* ── Floating Particles ─────────────────────────────── */
+    const canvas = document.getElementById("particles");
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
+    for (let i = 0; i < 60; i++) {
+      particles.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        r: Math.random() * 1.5 + 0.5,
+        dx: (Math.random() - 0.5) * 0.4,
+        dy: (Math.random() - 0.5) * 0.3,
+        opacity: Math.random() * 0.4 + 0.1
+      });
+    }
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw connecting lines between nearby particles
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = `rgba(0, 255, 153, ${0.06 * (1 - dist / 120)})`;
+            ctx.lineWidth = 0.5;
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Draw particles
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(0, 255, 153, ${p.opacity})`;
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ── Page Load Animation ────────────────────────────── */
+    document.body.classList.add("loaded");
+  </script>
+
+</body>
+
+</html>
