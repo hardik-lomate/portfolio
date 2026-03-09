@@ -26,7 +26,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -92,7 +92,7 @@
           <span>Open to Opportunities</span>
         </div>
         <span class="intro">HI THERE, I'M</span>
-        <h1><span id="typed-role">Hardik Lomate</span><span class="typing-cursor"></span></h1>
+        <h1><span id="typed-role" class="typed-role">Hardik Lomate</span><span class="typing-cursor"></span></h1>
         <p>
           Cybersecurity undergraduate focused on SOC operations, log analysis,
           threat detection, vulnerability assessment, and Python-based security automation.
@@ -921,9 +921,7 @@
 
     function updateActiveNav() {
       const scrollY = window.scrollY + 120;
-      navbar.style.borderBottomColor = window.scrollY > 50
-        ? "rgba(0, 255, 153, 0.08)"
-        : "rgba(255, 255, 255, 0.06)";
+      navbar.classList.toggle("scrolled", window.scrollY > 50);
 
       sections.forEach(section => {
         const top = section.offsetTop;
