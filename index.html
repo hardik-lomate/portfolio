@@ -67,7 +67,7 @@
 
   <!-- NAVBAR -->
   <header class="navbar" id="navbar">
-    <div class="brand">HARDIK</div>
+    <div class="brand"><a href="#home" class="brand-link">HARDIK</a></div>
     <nav id="nav-menu">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -75,12 +75,15 @@
       <a href="#projects">Projects</a>
       <a href="#tools">Tools</a>
       <a href="#certifications">Certs</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
     </button>
   </header>
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
 
   <main>
 
@@ -102,18 +105,18 @@
           <a class="btn btn-outline" href="hardiksresume.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
         </div>
 
-        <div class="hero-badges">
-          <a href="https://github.com/hardik-lomate" target="_blank" rel="noopener">
-            <img src="https://img.shields.io/badge/GitHub-hardik--lomate-181717?style=for-the-badge&logo=github"
-              alt="GitHub Profile">
+        <div class="hero-social-links">
+          <a class="hero-social-btn" href="https://github.com/hardik-lomate" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
           </a>
-          <a href="https://tryhackme.com/p/5638507" target="_blank" rel="noopener">
-            <img src="https://img.shields.io/badge/TryHackMe-Profile-212C42?style=for-the-badge&logo=tryhackme"
-              alt="TryHackMe Profile">
+          <a class="hero-social-btn" href="https://tryhackme.com/p/5638507" target="_blank" rel="noopener" aria-label="TryHackMe">
+            <i class="fa-solid fa-skull-crossbones"></i>
+            <span>TryHackMe</span>
           </a>
-          <a href="https://linkedin.com/in/hardiklomate/" target="_blank" rel="noopener">
-            <img src="https://img.shields.io/badge/LinkedIn-hardiklomate-0A66C2?style=for-the-badge&logo=linkedin"
-              alt="LinkedIn Profile">
+          <a class="hero-social-btn" href="https://linkedin.com/in/hardiklomate/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
@@ -197,6 +200,18 @@
             loading="lazy"
           >
         </div>
+
+        <!-- Currently Learning -->
+        <div class="learning-panel fade-up">
+          <h3 class="learning-title"><i class="fa-solid fa-bolt"></i> Currently Learning</h3>
+          <div class="learning-tags">
+            <span class="learn-tag"><i class="fa-solid fa-shield-halved"></i> Splunk SIEM</span>
+            <span class="learn-tag"><i class="fa-solid fa-bug-slash"></i> Malware Analysis</span>
+            <span class="learn-tag"><i class="fa-solid fa-cloud"></i> Cloud Security (AWS)</span>
+            <span class="learn-tag"><i class="fa-solid fa-list-check"></i> CEH Exam Prep</span>
+            <span class="learn-tag"><i class="fa-brands fa-python"></i> Advanced Python Scripting</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -271,7 +286,12 @@
             <div class="project-icon"><i class="fa-solid fa-file-shield"></i></div>
             <div>
               <h3>Log Analysis &amp; Authentication Threat Detection</h3>
-              <span class="project-tech">Python · Windows Event Logs · SIEM</span>
+              <div class="project-pill-row">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Windows Event Logs</span>
+                <span class="tech-pill">SIEM</span>
+                <span class="tech-pill">Regex</span>
+              </div>
             </div>
           </div>
           <ul class="project-details">
@@ -294,7 +314,12 @@
             <div class="project-icon"><i class="fa-solid fa-satellite-dish"></i></div>
             <div>
               <h3>Network Vulnerability Assessment</h3>
-              <span class="project-tech">Kali Linux · Nmap · CVE Analysis</span>
+              <div class="project-pill-row">
+                <span class="tech-pill">Kali Linux</span>
+                <span class="tech-pill">Nmap</span>
+                <span class="tech-pill">CVE Analysis</span>
+                <span class="tech-pill">VirtualBox</span>
+              </div>
             </div>
           </div>
           <ul class="project-details">
@@ -317,7 +342,12 @@
             <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
             <div>
               <h3>Network Traffic Analysis</h3>
-              <span class="project-tech">Wireshark · tshark · pcap</span>
+              <div class="project-pill-row">
+                <span class="tech-pill">Wireshark</span>
+                <span class="tech-pill">tshark</span>
+                <span class="tech-pill">pcap</span>
+                <span class="tech-pill">TCP/IP</span>
+              </div>
             </div>
           </div>
           <ul class="project-details">
@@ -507,7 +537,72 @@
       </div>
     </section>
 
+    <!-- ══════════ EXPERIENCE ══════════ -->
+    <section id="experience" class="experience">
+      <div class="fade-up" style="text-align:center; margin-bottom:48px;">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">MY <span>EXPERIENCE</span></h2>
+        <p class="section-desc" style="margin-left:auto; margin-right:auto;">
+          Practical cybersecurity experience through lab projects, open-source contributions, and community involvement.
+        </p>
+      </div>
 
+      <div class="exp-timeline">
+
+        <div class="exp-item fade-up">
+          <div class="exp-dot"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Cybersecurity Researcher &amp; Lab Practitioner</h3>
+                <p class="exp-company"><i class="fa-solid fa-flask"></i> Independent / Self-Directed</p>
+              </div>
+              <span class="exp-badge seeking">Seeking Internship</span>
+            </div>
+            <div class="exp-period"><i class="fa-regular fa-calendar"></i> 2023 – Present &nbsp;·&nbsp; Ongoing</div>
+            <ul class="exp-details">
+              <li>Built 10+ virtual lab environments using VirtualBox and VMware for hands-on SOC simulations</li>
+              <li>Conducted log analysis, brute-force detection, and packet inspection using Python, Nmap, and Wireshark</li>
+              <li>Completed TryHackMe Advent of Cyber 2023 &amp; 2024 — ranked in the global top percentile</li>
+              <li>Earned IBM Cybersecurity Fundamentals and Cisco Introduction to Cybersecurity certifications</li>
+            </ul>
+            <div class="exp-pills">
+              <span class="tech-pill">SOC Analysis</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Nmap</span>
+              <span class="tech-pill">Wireshark</span>
+              <span class="tech-pill">TryHackMe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item fade-up fade-up-delay-1">
+          <div class="exp-dot"><i class="fa-solid fa-users"></i></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Open-Source Contributor &amp; GitHub Community</h3>
+                <p class="exp-company"><i class="fa-brands fa-github"></i> GitHub — hardik-lomate</p>
+              </div>
+              <span class="exp-badge open-source">Open Source</span>
+            </div>
+            <div class="exp-period"><i class="fa-regular fa-calendar"></i> 2022 – Present &nbsp;·&nbsp; Active</div>
+            <ul class="exp-details">
+              <li>Maintains public repositories for security automation scripts and lab documentation</li>
+              <li>Shares Python-based log analysis and brute-force detection tools for the SOC community</li>
+              <li>Active learner on TryHackMe and Hack The Box platforms</li>
+            </ul>
+            <div class="exp-pills">
+              <span class="tech-pill">Git</span>
+              <span class="tech-pill">GitHub</span>
+              <span class="tech-pill">Markdown</span>
+              <span class="tech-pill">Security Automation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- ══════════ CONTACT ══════════ -->
     <section id="contact" class="contact">
@@ -896,14 +991,22 @@
     /* ── Hamburger Menu ──────────────────────────────────── */
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("nav-menu");
+    const navOverlay = document.getElementById("navOverlay");
 
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-      hamburger.setAttribute("aria-expanded", navMenu.classList.contains("active"));
-    });
+    function toggleNav(open) {
+      const isOpen = open !== undefined ? open : !navMenu.classList.contains("active");
+      navMenu.classList.toggle("active", isOpen);
+      hamburger.classList.toggle("open", isOpen);
+      navOverlay.classList.toggle("active", isOpen);
+      hamburger.setAttribute("aria-expanded", isOpen);
+      document.body.style.overflow = isOpen ? "hidden" : "";
+    }
+
+    hamburger.addEventListener("click", () => toggleNav());
+    navOverlay.addEventListener("click", () => toggleNav(false));
 
     navMenu.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => navMenu.classList.remove("active"));
+      link.addEventListener("click", () => toggleNav(false));
     });
 
     /* ── Back to Top ─────────────────────────────────────── */
