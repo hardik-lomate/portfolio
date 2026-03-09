@@ -87,6 +87,10 @@
     <!-- ══════════ HERO ══════════ -->
     <section id="home" class="hero">
       <div class="hero-text fade-up">
+        <div class="hero-availability">
+          <span class="avail-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
         <span class="intro">HI THERE, I'M</span>
         <h1><span id="typed-role">Hardik Lomate</span><span class="typing-cursor"></span></h1>
         <p>
@@ -138,10 +142,10 @@
         </p>
 
         <ul class="about-info">
-          <li><b>Focus:</b> SOC &amp; Cyber Security</li>
-          <li><b>Location:</b> Pune, Maharashtra, India</li>
-          <li><b>Education:</b> B.E. Cyber Security (2028)</li>
-          <li><b>Status:</b> <span style="color:var(--accent);">● Available</span></li>
+          <li><i class="fa-solid fa-crosshairs"></i><b>Focus:</b> SOC &amp; Cyber Security</li>
+          <li><i class="fa-solid fa-location-dot"></i><b>Location:</b> Pune, Maharashtra, India</li>
+          <li><i class="fa-solid fa-graduation-cap"></i><b>Education:</b> B.E. Cyber Security (2028)</li>
+          <li><i class="fa-solid fa-circle-check"></i><b>Status:</b> <span style="color:var(--accent);">● Available</span></li>
         </ul>
 
         <div class="skills-container">
@@ -262,6 +266,7 @@
 
         <!-- Project 1 -->
         <div class="project-card fade-up">
+          <span class="project-num">01</span>
           <div class="project-header">
             <div class="project-icon"><i class="fa-solid fa-file-shield"></i></div>
             <div>
@@ -284,6 +289,7 @@
 
         <!-- Project 2 -->
         <div class="project-card fade-up fade-up-delay-1">
+          <span class="project-num">02</span>
           <div class="project-header">
             <div class="project-icon"><i class="fa-solid fa-satellite-dish"></i></div>
             <div>
@@ -306,6 +312,7 @@
 
         <!-- Project 3 -->
         <div class="project-card fade-up fade-up-delay-2">
+          <span class="project-num">03</span>
           <div class="project-header">
             <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
             <div>
@@ -402,23 +409,31 @@
         <a class="cert-card fade-up fade-up-delay-1" href="https://courses.redteamleaders.com/exam-completion/04c23d71fdceb6cc" target="_blank" rel="noopener">
           <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
           <h4>Certified AI Security &amp; Risk (CAISR)</h4>
-          <span>2025</span>
+          <span class="cert-issuer">Red Team Leaders</span>
+          <span class="cert-year">2025</span>
+          <span class="cert-verify">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <a class="cert-card fade-up fade-up-delay-2" href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-32PIZFKIEV.pdf" target="_blank"
           rel="noopener">
           <div class="cert-icon"><i class="fa-solid fa-flag"></i></div>
           <h4>TryHackMe Advent of Cyber</h4>
-          <span>2023 &amp; 2024</span>
+          <span class="cert-issuer">TryHackMe</span>
+          <span class="cert-year">2023 &amp; 2024</span>
+          <span class="cert-verify">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <a class="cert-card fade-up fade-up-delay-3" href="https://www.credly.com/badges/e7800f51-8284-4173-beb0-462f32896af6" target="_blank" rel="noopener">
           <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h4>IBM Cybersecurity Fundamentals</h4>
-          <span>IBM</span>
+          <span class="cert-issuer">IBM</span>
+          <span class="cert-year">Credly Verified</span>
+          <span class="cert-verify">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <a class="cert-card fade-up fade-up-delay-4" href="https://www.credly.com/badges/a8cfc8cb-ea60-4710-b655-5618ffafdcf2/public_url" target="_blank" rel="noopener">
           <div class="cert-icon"><i class="fa-solid fa-network-wired"></i></div>
           <h4>Introduction to Cybersecurity</h4>
-          <span>Cisco</span>
+          <span class="cert-issuer">Cisco</span>
+          <span class="cert-year">Credly Verified</span>
+          <span class="cert-verify">Verify <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
       </div>
 
@@ -432,18 +447,22 @@
     <!-- ══════════ STATS ══════════ -->
     <section class="stats">
       <div class="stat-item fade-up">
+        <div class="stat-icon"><i class="fa-solid fa-folder-open"></i></div>
         <h3><span class="counter" data-target="3">0</span>+</h3>
         <p>Security Projects</p>
       </div>
       <div class="stat-item fade-up fade-up-delay-1">
+        <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
         <h3><span class="counter" data-target="5">0</span>+</h3>
         <p>Certifications</p>
       </div>
       <div class="stat-item fade-up fade-up-delay-2">
+        <div class="stat-icon"><i class="fa-solid fa-flask"></i></div>
         <h3><span class="counter" data-target="10">0</span>+</h3>
         <p>Security Labs</p>
       </div>
       <div class="stat-item fade-up fade-up-delay-3">
+        <div class="stat-icon"><i class="fa-solid fa-bullseye"></i></div>
         <h3>100<span style="font-size:0.6em;">%</span></h3>
         <p>Hands-on Approach</p>
       </div>
@@ -451,25 +470,40 @@
 
     <!-- ══════════ EDUCATION ══════════ -->
     <section id="education" class="education">
-      <div class="fade-up" style="text-align:center; margin-bottom:32px;">
+      <div class="fade-up" style="text-align:center; margin-bottom:48px;">
         <span class="section-tag">Background</span>
         <h2 class="section-title">MY <span>EDUCATION</span></h2>
       </div>
 
       <div class="edu-timeline">
-        <div class="edu-card fade-up">
-          <div class="edu-year">Pursuing (2025 - 2028)</div>
-          <h3>Bachelor of Engineering in Cyber Security</h3>
-          <p class="edu-school">University of Mumbai</p>
-          <p class="edu-desc">Currently pursuing B.E. in Cybersecurity with focus on SOC operations, threat detection,
-            and security automation.</p>
+
+        <div class="edu-item fade-up">
+          <div class="edu-dot">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2025 – 2028 &nbsp;·&nbsp; Pursuing</div>
+            <h3>Bachelor of Engineering in Cyber Security</h3>
+            <p class="edu-school"><i class="fa-solid fa-building-columns"></i> University of Mumbai</p>
+            <p class="edu-desc">Currently pursuing B.E. in Cybersecurity with focus on SOC operations, threat detection, and security automation.</p>
+          </div>
         </div>
-        <div class="edu-card fade-up fade-up-delay-1">
-          <div class="edu-year">Completed (2022-2025)</div>
-          <h3>Diploma in Information Technology</h3>
-          <p class="edu-school">Dr. Babasaheb Ambedkar Technological University</p>
-          <p class="edu-desc">CGPA: 7.80 / 10 - Strong foundation in IT fundamentals, networking, and programming.</p>
+
+        <div class="edu-item fade-up fade-up-delay-1">
+          <div class="edu-dot">
+            <i class="fa-solid fa-diploma"></i>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2022 – 2025 &nbsp;·&nbsp; Completed</div>
+            <h3>Diploma in Information Technology</h3>
+            <p class="edu-school"><i class="fa-solid fa-building-columns"></i> Dr. Babasaheb Ambedkar Technological University</p>
+            <p class="edu-desc">Strong foundation in IT fundamentals, networking, and programming.</p>
+            <div class="edu-grade">
+              <i class="fa-solid fa-star"></i> CGPA 7.80 / 10
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -536,10 +570,30 @@
 
   </main>
 
+  <!-- ══════════ HIRE STRIP ══════════ -->
+  <div class="hire-strip fade-up">
+    <div class="hire-strip-content">
+      <div>
+        <p class="hire-strip-title">Open to Internships &amp; Entry-Level Roles</p>
+        <p class="hire-strip-sub">SOC Analyst · Security Engineer · Pen Tester · Security Automation</p>
+      </div>
+      <a href="#contact" class="btn btn-primary hire-strip-btn"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
+    </div>
+  </div>
+
   <!-- ══════════ FOOTER ══════════ -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2026 Hardik Lomate — Cybersecurity Portfolio. All rights reserved.</p>
+      <div class="footer-left">
+        <div class="footer-brand">&gt; HARDIK</div>
+        <p>&copy; 2026 Hardik Lomate — Cybersecurity Portfolio.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
       <div class="social-links">
         <a href="https://github.com/hardik-lomate" target="_blank" rel="noopener" aria-label="GitHub"><i
             class="fa-brands fa-github"></i></a>
